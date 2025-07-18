@@ -12,20 +12,41 @@
       color: #333;
     }
     header {
-      background-color: #004080;
+      background-color: #003366;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 40px 0;
+      position: relative;
     }
-   header img {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 10px;
+
+    .profile-image {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .profile-image img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    @media (max-width: 768px) {
+      .profile-image {
+        position: static;
+        margin: 0 auto 20px auto;
+        text-align: center;
       }
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+
+      .profile-image img {
+        width: 100px;
+        height: 100px;
+      }
+
+      header {
+        padding-top: 20px;
+      }
     }
     section {
       margin-bottom: 40px;
